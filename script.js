@@ -46,9 +46,21 @@ var controls = new THREE.OrbitControls(camera, renderer.domElement);
 var bod = document.querySelector('body')
 bod.appendChild(renderer.domElement)
 
-const light = new THREE.PointLight(0xffffff, 2, 150);
-light.position.set(0, 10, -20);
+const light = new THREE.PointLight(0xffffff, 1, 150);
+light.position.set(0, 10, -25);
 scene.add(light);
+
+const light2 = new THREE.PointLight(0xffffff, 1, 150);
+light2.position.set(18, 6, -3);
+scene.add(light2);
+
+const light3 = new THREE.PointLight(0xffffff, 1, 150);
+light3.position.set(-12, 6, -3);
+scene.add(light3);
+
+const light4 = new THREE.PointLight(0xffffff, 1.25, 50);
+light4.position.set(0, 36, -2);
+scene.add(light4);
 
 const size = 50;
 const divisions = 50;
